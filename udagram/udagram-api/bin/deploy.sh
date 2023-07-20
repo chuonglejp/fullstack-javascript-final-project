@@ -1,0 +1,12 @@
+eb init $EB_APP --platform node.js --region $AWS_DEFAULT_REGION 
+eb use $EB_ENV
+eb setenv JWT_SECRET=$POSTGRES_USERNAME
+eb setenv JWT_SECRET=$POSTGRES_PASSWORD
+eb setenv JWT_SECRET=$POSTGRES_DB
+eb setenv JWT_SECRET=$POSTGRES_HOST
+eb setenv JWT_SECRET=$AWS_REGION
+eb setenv JWT_SECRET=$AWS_PROFILE
+eb setenv JWT_SECRET=$AWS_BUCKET
+eb setenv JWT_SECRET=$URL
+eb setenv JWT_SECRET=$JWT_SECRET
+eb deploy $EB_ENV
